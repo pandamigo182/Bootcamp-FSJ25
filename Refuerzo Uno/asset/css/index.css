@@ -1,0 +1,30 @@
+.tittle{
+    background-color: #ff4c68;
+    color: white;
+}
+
+.title-section{
+    padding-top: 20px;
+    background-color: #ff4c68;
+    height: 300px;
+    overflow: hidden;
+}
+
+.logo-welcome {
+    width: 200px; 
+    transform: rotate(25deg); 
+    margin-top: 40px;  
+}
+
+.btn{
+    margin-top: 10px;
+    margin-left: 20px;
+}
+
+.feature-section{
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+.color-icons{
+    color: #ff4c68;
+}
