@@ -1,50 +1,77 @@
 @import url('https://fonts.googleapis.com/css2?family=Mukta:wght@200;300;400;500;600;700;800&display=swap');
 
 
-body{
+.body{
     background-color: #192c63 !important;
     color: #fff !important;
     font-family: 'Mukta', sans-serif !important;
 }
 
-.img{
-    box-shadow: 10px 10px 5px rgba(0, 0, 0, 0.5) !important;
+.header .navbar{
+    background-color: #3498db !important;
 }
 
-.menu-navbar:hover{
+.header .navbar .logo img:hover{
+    filter: drop-shadow(5px 5px 10px rgba(253, 254, 254, 0.5)) !important;
+}
+
+
+.header .nav-link:hover{
     color: red !important;
-    text-shadow: 1px 2px 3px #fff;
+    text-shadow: 1px 2px 3px #000;
+    transition: 0.5s;
+}
+
+.main-content .bio h1:hover{
+    color: red !important;
+    text-shadow: 1px 2px 3px #000;
     transition: 0.5s;
 }
 
 .btn:hover{
-    background-color: blue !important;
+    background-color: red !important;
     box-shadow: 1px 2px 3px #fff;
+    transition: 0.5s;
+}
+
+.card:hover{
+    background-color: #212f3d !important;
+    color: #fff;
+    box-shadow: 1px 2px 3px #000;
     transition: 0.5s;
 }
 
 /*--- Header Section ---*/
 
 .header .navbar .logo img{
-    width: 15vw !important;
+    width: 10vw !important;
 }
 
-.header .navbar .menu-navbar{
-    width: 40vw;
-    display: flex;
+.header .navbar{
+    max-width: 100% !important;
+    flex-basis: 100% !important;
+    flex-grow: 1 !important;
+    max-width: 100% !important;
+    padding: 0 !important;
+    margin: 0 !important;
+    display:flex;
     justify-content: space-around !important;
     list-style: none;
+    
 }
 
-.header .navbar .menu-navbar li a{
-    text-decoration: none;
-    color: white;
+/* ---- filter se usa solo para el contorno ----*/
+
+.header .navbar .logo img{
+    width: 10vw !important;
+    filter: drop-shadow(5px 5px 10px rgba(0, 0, 0, 0.5)) !important;
 }
 
 /* ---- Main Section ---- */
 
 .main-content{
     margin: 2px;
+    padding: 20px;
     display: grid;
     grid-template-columns: 5fr 5fr;
     gap: 2rem;
@@ -52,9 +79,17 @@ body{
 }
 
 .main-content .img-container img{
-    width: 30vw;
+    width: 20vw;
     align-items: center;
 }
 
+.projects-container {
+    margin: 0;
+}
 
+.social-networks a{
+    text-decoration: none !important;
+    margin: 0 10px;
+    color: #fff;
+}
 
