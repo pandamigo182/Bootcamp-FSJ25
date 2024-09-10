@@ -2,7 +2,7 @@
 
 
 .body{
-    background-color: #192c63 !important;
+    background-color: #050361 !important;
     color: #fff !important;
     font-family: 'Mukta', sans-serif !important;
 }
@@ -14,7 +14,6 @@
 .header .navbar .logo img:hover{
     filter: drop-shadow(5px 5px 10px rgba(253, 254, 254, 0.5)) !important;
 }
-
 
 .header .nav-link:hover{
     color: red !important;
@@ -34,11 +33,24 @@
     transition: 0.5s;
 }
 
+.projects-container .projects-header h2:hover{
+    color: red !important;
+    text-shadow: 1px 2px 3px #000;
+    transition: 0.5s;
+}
+
+.container-form .h4:hover{
+    color: red !important;
+    text-shadow: 1px 2px 3px #000;
+    transition: 0.5s;
+}
+
 .card:hover{
     background-color: #212f3d !important;
     color: #fff;
     box-shadow: 1px 2px 3px #000;
     transition: 0.5s;
+    width: 30vw !important;
 }
 
 /*--- Header Section ---*/
