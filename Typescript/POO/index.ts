@@ -1,14 +1,14 @@
-//Programacion Orientada a Objetos
-//Es una forma de programar siempre describir o pensar las cosas como si fueran objetos
+// Programacion Orientada a Objetos
+// Es una forma de programar intentando siempre describir o pensar las cosas como si fueran objetos
 
-//Conceptos Principales de POO -> Clases y los objetos
-//Clases -> Molde para generar algo
-//Objeto -> Lo que podemos crear en base a ese molde
+// Conceptos Principales de POO -> Clases y los Objetos
+// Clases -> Molde para generar algo
+// Objeto -> Lo que podemos crear en base a ese molde
 
 //Declaracion de clase
 
 class Auto{
-    //Caracteristicas
+    //Caracteristicas generales -> Propiedades o atributos
     numChasis:number;
     motor:string;
     color:string;
@@ -18,5 +18,7 @@ class Auto{
     plazas:number;
     frenos:string;
     modelo:string;
-    añoFab:string;
+    anioFab:number;
+
 }
+

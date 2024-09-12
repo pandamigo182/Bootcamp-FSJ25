@@ -14,9 +14,13 @@ html {
     padding-top: 60px;
 }
 
-.navbar-nav .nav-link, .navbar-brand img {
-    color: #ffffff !important;
-    transition: 0.5s;
+.container .navbar{
+    background-color: rgb(168, 51, 56) !important;
+    width: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 1000;
 }
 
 .header .carousel .carousel-item{
@@ -33,7 +37,9 @@ transition: transform 2s ease, opacity .5s ease-out
     align-items: center;
 }
 
-
+.navbar-nav .nav-link {
+    color: #ffffff !important;
+}
 
 .footer-logo{
     display: flex;
@@ -54,12 +60,13 @@ transition: transform 2s ease, opacity .5s ease-out
 
 /*--- Acciones con el cursor  ----*/
 .navbar-nav .nav-link:hover {
-    color: #000 !important;
-    text-shadow: 0 0 10px rgba(128, 128, 128, 0.5) !important;
+    color: #000 !important; 
+    text-shadow: 0 0 10px rgba(128, 128, 128, 0.5) !important; 
     font-size: calc(1.25em) !important;
+    transition: 0.5s;
 }
 
-.navbar-brand img:hover {
+.navbar-brand img:hover{
     transform: scale(1.1);
 }
 
@@ -69,19 +76,4 @@ transition: transform 2s ease, opacity .5s ease-out
     .footer {
     flex-direction: column;
     }
-}
-
-/* Pantalla Pequena screens  */
-@media (max-width: 480px) {
-    
-}
-
-/* Pantallas Medias */
-@media (min-width: 481px) and (max-width: 768px) {
-    
-}
-
-/* Pantallas grandes */
-@media (min-width: 769px) {
-    
 }
