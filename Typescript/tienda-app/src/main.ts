@@ -1,5 +1,6 @@
 import './style.css'
 import { Producto } from './clases/Producto'; //Desde donde se importa la clase Producto
+import { Tienda } from './clases/tienda';
 
 document.querySelector<HTMLDivElement>('#app')!.innerHTML = `
   <div>
@@ -24,8 +25,9 @@ document.querySelector<HTMLDivElement>('#app')!.innerHTML = `
       <button type="submit">Agregar Producto</button>
     </form>
 
-  </div>
+  </div>  
 `
+const tienda = new Tienda();
 
 //document.querySelector<HTMLElement>('#parrafo')!.innerText = "Esto es texto desde el p";
 
@@ -49,7 +51,8 @@ form.addEventListener('submit', (e:SubmitEvent) => {
 
     let productito = new Producto(id,nombre,precio,cantidad);
     console.log(productito);
+    tienda.agregarProducto(productito);
 
-    localStorage.setItem('productos',JSON.stringify(productito));
+    //localStorage.setItem('productos',JSON.stringify(productito));
     
 })
