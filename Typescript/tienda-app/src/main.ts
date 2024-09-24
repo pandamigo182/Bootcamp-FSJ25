@@ -24,7 +24,7 @@ document.querySelector<HTMLDivElement>('#app')!.innerHTML = `
 
       <button type="submit">Agregar Producto</button>
     </form>
-
+  <ul id="productsList"></ul>
   </div>  
 `
 const tienda = new Tienda();
@@ -32,6 +32,8 @@ const tienda = new Tienda();
 //document.querySelector<HTMLElement>('#parrafo')!.innerText = "Esto es texto desde el p";
 
 const form = document.getElementById("formProducto") as HTMLFormElement;
+
+const productList = document.getElementById("productsList") as HTMLUListElement;
 
 form.addEventListener('submit', (e:SubmitEvent) => {
   e.preventDefault(); //Previene que refresque la página
@@ -52,7 +54,24 @@ form.addEventListener('submit', (e:SubmitEvent) => {
     let productito = new Producto(id,nombre,precio,cantidad);
     console.log(productito);
     tienda.agregarProducto(productito);
+    renderProductos(); //se pinta el li
+
 
     //localStorage.setItem('productos',JSON.stringify(productito));
     
 })
+
+function renderProductos(){
+  productList.innerHTML = ""; //Se vacia la lista 
+  console.log("Holiwis desde saludar")
+
+  console.log(tienda.listarProductos());  
+  tienda.listarProductos().map((Producto) => {
+    const productoItem = document.createElement('li');
+    console.log(Producto);
+    productoItem.textContent = `${Producto.getNombre()} -Stock: ${Producto.getCantidad()} - $ ${Producto.getPrecio()} `;
+    productList.appendChild(productoItem);
+  });
+  
+}
+renderProductos();
